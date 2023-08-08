@@ -2,14 +2,11 @@ import java.net.InetAddress;
 public class Main{
 
     public static void main(String[] args){
-
         FindAddress();
-
     }
 
     public static void FindAddress(){
-
-
+        
         try { 
 
         InetAddress inter = InetAddress.getLocalHost();
@@ -28,16 +25,7 @@ public class Main{
         }
 
             catch(Exception e ){
-
                 System.out.println("Nao foi possivel obter o endereço de IP");
-            }
+       }
     }
-
-
-
-
-
-
-
-
 }
