@@ -1,5 +1,4 @@
 import java.net.InetAddress;
-
 public class Main{
 
     public static void main(String[] args){
@@ -12,12 +11,22 @@ public class Main{
 
 
         try { 
+
         InetAddress inter = InetAddress.getLocalHost();
+        String str = inter.getHostAddress();        
+        boolean checkIfExist = inter.isAnyLocalAddress();
 
-        String str = inter.getHostAddress();
+        String ShowName = inter.getHostName();
 
+
+        System.out.println("HostName: " + ShowName);
+        System.out.println("Is IP Address local: " + checkIfExist);
         System.out.println("Your Ip Address is: " +str);
+
+
+        
         }
+
             catch(Exception e ){
 
                 System.out.println("Nao foi possivel obter o endereço de IP");
